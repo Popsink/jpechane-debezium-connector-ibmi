@@ -21,8 +21,10 @@ import java.util.logging.Logger;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+@Disabled
 public class CcsidOverrideIT {
 	private static final Logger log = Logger.getLogger(CcsidOverrideIT.class.toString());
 

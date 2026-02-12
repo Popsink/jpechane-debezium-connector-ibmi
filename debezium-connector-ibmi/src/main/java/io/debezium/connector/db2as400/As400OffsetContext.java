@@ -143,11 +143,14 @@ public class As400OffsetContext implements OffsetContext {
     }
 
     @Override
+    public boolean isInitialSnapshotRunning() {
+        return sourceInfo.isSnapshot();
+    }
+
     public boolean isSnapshotRunning() {
         return sourceInfo.isSnapshot();
     }
 
-    @Override
     public void preSnapshotStart() {
         snapshotComplete = false;
         sourceInfo.setSnapshot(SnapshotRecord.TRUE);
@@ -229,5 +232,10 @@ public class As400OffsetContext implements OffsetContext {
     @Override
     public void markSnapshotRecord(SnapshotRecord record) {
         sourceInfo.setSnapshot(record);
+    }
+
+    @Override
+    public void preSnapshotStart(boolean b) {
+
     }
 }
