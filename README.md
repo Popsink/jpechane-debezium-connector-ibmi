@@ -1,3 +1,5 @@
+#[DEPRECATED]
+
 # Project
 
 Use the IBM I journal as a source of CDC events see https://bitbucket.org/jhc-systems/journal-parsing/ for the journal fetch/decoding
